@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ürün Detay Kataloğu - Huzeyfe Gedik</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/detay.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="donum-noktalari.html">Dönüm Noktaları</a></li>
+            <li><a href="antika.html">Antika Pazarı</a></li>
+            <li><a href="urun-detay.html">Ürün Detayları</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <div class="shop-container detail-wrapper">
+        <h1>Antika Ürün Detay Kataloğu</h1>
+
+        <!-- 1. YATAĞAN SÜNGÜSÜ -->
+        <div class="detay-item">
+            <img src="../img/yatagan.jpg" alt="yatagan">
+            <div class="detay-bilgi">
+                <h2>Yatağan Süngüsü</h2>
+                <p class="fiyat">7500</p>
+                <div class="ozellikler">
+                    <ul>
+                        <li><strong>Materyal:</strong> 1.4116 Karbon Çeliği</li>
+                        <li><strong>Dönem:</strong> Geç Osmanlı Dönemi</li>
+                    </ul>
+                </div>
+                <button class="buy-button" onclick="sepeteEkle('Yatağan Süngüsü', 7500)">SEPETE EKLE</button>
+            </div>
+        </div>
+
+        <!-- 2. KEMER TOKASI -->
+        <div class="detay-item">
+            <img src="../img/nazisubay.jpg" alt="toka">
+            <div class="detay-bilgi">
+                <h2>Kemer Tokası</h2>
+                <p class="fiyat">1000</p>
+                <div class="ozellikler">
+                    <ul>
+                        <li><strong>Materyal:</strong> Alüminyum Pres</li>
+                        <li><strong>Dönem:</strong> 2. Dünya Savaşı</li>
+                    </ul>
+                </div>
+                <button class="buy-button" onclick="sepeteEkle('Kemer Tokası', 1000)">SEPETE EKLE</button>
+            </div>
+        </div>
+
+        <!-- 3. NAZİ SUBAY BROVESİ -->
+        <div class="detay-item">
+            <img src="../img/nazibrove.jpg" alt="brove">
+            <div class="detay-bilgi">
+                <h2>Nazi Subay Brovesi</h2>
+                <p class="fiyat">1400</p>
+                <div class="ozellikler">
+                    <ul>
+                        <li><strong>Materyal:</strong> Gümüş kaplama bronz</li>
+                        <li><strong>Birim:</strong> Luftwaffe</li>
+                    </ul>
+                </div>
+                <button class="buy-button" onclick="sepeteEkle('Nazi Subay Brovesi', 1400)">SEPETE EKLE</button>
+            </div>
+        </div>
+
+        <!-- 4. LEE-ENFIELD SÜNGÜ -->
+        <div class="detay-item">
+            <img src="../img/leeenfieldsüngü.jpg" alt="enfield">
+            <div class="detay-bilgi">
+                <h2>Lee-Enfield Süngü</h2>
+                <p class="fiyat">9000</p>
+                <div class="ozellikler">
+                    <ul>
+                        <li><strong>Menşei:</strong> İngiltere</li>
+                        <li><strong>Dönem:</strong> 2. Dünya Savaşı</li>
+                    </ul>
+                </div>
+                <button class="buy-button" onclick="sepeteEkle('Lee-Enfield Süngü', 9000)">SEPETE EKLE</button>
+            </div>
+        </div>
+
+        <!-- 5. YUGOSLAV MAVZER SÜNGÜSÜ -->
+        <div class="detay-item">
+            <img src="../img/yugo.jpg" alt="yugo">
+            <div class="detay-bilgi">
+                <h2>Yugoslav Mavzer Süngüsü</h2>
+                <p class="fiyat">8000</p>
+                <div class="ozellikler">
+                    <ul>
+                        <li><strong>Materyal:</strong> Ağır sanayi çeliği</li>
+                        <li><strong>Dönem:</strong> Soğuk Savaş</li>
+                    </ul>
+                </div>
+                <button class="buy-button" onclick="sepeteEkle('Yugoslav Mavzer Süngüsü', 8000)">SEPETE EKLE</button>
+            </div>
+        </div>
+
+        <!-- 6. SOVYET MADALYA -->
+        <div class="detay-item">
+            <img src="../img/sovyetmadalya.jpg" alt="madalya">
+            <div class="detay-bilgi">
+                <h2>Sovyet Madalya</h2>
+                <p class="fiyat">2000</p>
+                <div class="ozellikler">
+                    <ul>
+                        <li><strong>Dönem:</strong> 1970'ler SSCB</li>
+                        <li><strong>Kategori:</strong> Üstün Hizmet</li>
+                    </ul>
+                </div>
+                <button class="buy-button" onclick="sepeteEkle('Sovyet Madalya', 2000)">SEPETE EKLE</button>
+            </div>
+        </div>
+
+        <!-- 7. FRANSIZ SÜNGÜSÜ -->
+        <div class="detay-item">
+            <img src="../img/fransız.jpg" alt="fransız">
+            <div class="detay-bilgi">
+                <h2>Fransız Süngüsü</h2>
+                <p class="fiyat">7500</p>
+                <div class="ozellikler">
+                    <ul>
+                        <li><strong>Tarih:</strong> 1876 Üretimi</li>
+                        <li><strong>Tip:</strong> Şiş formlu</li>
+                    </ul>
+                </div>
+                <button class="buy-button" onclick="sepeteEkle('Fransız Süngüsü', 7500)">SEPETE EKLE</button>
+            </div>
+        </div>
+
+        <!-- 8. M34 KASK -->
+        <div class="detay-item">
+            <img src="../img/ksk.jpg" alt="kask">
+            <div class="detay-bilgi">
+                <h2>M34 Nazi Polis Kaskı</h2>
+                <p class="fiyat">4500</p>
+                <div class="ozellikler">
+                    <ul>
+                        <li><strong>Materyal:</strong> Hafif Çelik Sac</li>
+                        <li><strong>Birim:</strong> Polis Birimi</li>
+                    </ul>
+                </div>
+                <button class="buy-button" onclick="sepeteEkle('M34 Kask', 4500)">SEPETE EKLE</button>
+            </div>
+        </div>
+
+        <!-- 9. ASKERİ KÜTÜKLÜK -->
+        <div class="detay-item">
+            <img src="../img/kütüklük.jpg" alt="kütüklük">
+            <div class="detay-bilgi">
+                <h2>Askeri Kütüklük</h2>
+                <p class="fiyat">800</p>
+                <div class="ozellikler">
+                    <ul>
+                        <li><strong>Materyal:</strong> Sığır derisi</li>
+                        <li><strong>Tip:</strong> Üçlü bölme</li>
+                    </ul>
+                </div>
+                <button class="buy-button" onclick="sepeteEkle('Askeri Kütüklük', 800)">SEPETE EKLE</button>
+            </div>
+        </div>
+
+        <!-- 10. ASKERİ DÜRBÜN -->
+        <div class="detay-item">
+            <img src="../img/dürbün.jpg" alt="dürbün">
+            <div class="detay-bilgi">
+                <h2>Askeri Dürbün</h2>
+                <p class="fiyat">8300</p>
+                <div class="ozellikler">
+                    <ul>
+                        <li><strong>Optik:</strong> 6x30 büyütme</li>
+                        <li><strong>Dönem:</strong> 1940-1944</li>
+                    </ul>
+                </div>
+                <button class="buy-button" onclick="sepeteEkle('Askeri Dürbün', 8300)">SEPETE EKLE</button>
+            </div>
+        </div>
+
+        <!-- 11. DENİZCİ ŞAPKASI -->
+        <div class="detay-item">
+            <img src="../img/ing.jpg" alt="şapka">
+            <div class="detay-bilgi">
+                <h2>İngiliz Denizci Şapkası</h2>
+                <p class="fiyat">700</p>
+                <div class="ozellikler">
+                    <ul>
+                        <li><strong>Dönem:</strong> 1940'lar</li>
+                        <li><strong>Materyal:</strong> Kumaş</li>
+                    </ul>
+                </div>
+                <button class="buy-button" onclick="sepeteEkle('İngiliz Şapkası', 700)">SEPETE EKLE</button>
+            </div>
+        </div>
+
+        <!-- 12. SAHRA TELEFONU -->
+        <div class="detay-item">
+            <img src="../img/telefon.jpg" alt="telefon">
+            <div class="detay-bilgi">
+                <h2>Sahra Telefonu</h2>
+                <p class="fiyat">12000</p>
+                <div class="ozellikler">
+                    <ul>
+                        <li><strong>Model:</strong> Wehrmacht FF33</li>
+                        <li><strong>İşlev:</strong> Manyetolu</li>
+                    </ul>
+                </div>
+                <button class="buy-button" onclick="sepeteEkle('Sahra Telefonu', 12000)">SEPETE EKLE</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="main-footer">
+        <p>Huzeyfe Gedik Antika Koleksiyonu © 2026</p>
+    </footer>
+
+    <script src="../scripts/myscript.js"></script>
+</body>
+</html>
