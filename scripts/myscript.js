@@ -241,3 +241,22 @@ document.addEventListener("DOMContentLoaded", () => {
         restartButton.addEventListener("click", startQuiz);
     }
 });
+// İletişim sayfasındaki butonu yakalıyoruz
+const gmailButonu = document.getElementById('gmailButonu');
+
+if (gmailButonu) {
+    gmailButonu.addEventListener('click', function(e) {
+        e.preventDefault(); // Sayfanın yukarı kaymasını engeller
+        
+        // Kullanıcının mobil mi yoksa bilgisayar mı olduğunu kontrol eden test
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        
+        if (isMobile) {
+            // Mobildeyse: Doğrudan cihazın kendi e-posta/Gmail uygulamasını tetikler (Hata vermez)
+            window.location.href = "mailto:huzeyfegedik76@gmail.com?subject=Iletisim%20Formu";
+        } else {
+            // Bilgisayardaysa: Windows uyarısını geçip direkt tarayıcıda Gmail web compose açar
+            window.open("https://mail.google.com/mail/?view=cm&fs=1&to=huzeyfegedik76@gmail.com", "_blank");
+        }
+    });
+}
