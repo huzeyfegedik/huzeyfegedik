@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const silButonu = document.getElementById('sepeti-sil');
     const bitirButonu = document.getElementById('alisverisi-bitir');
 
-    // 1. ÜRÜN EKLEME
+ 
     urunButonlari.forEach(buton => {
         buton.addEventListener('click', function() {
             const kart = this.closest('.product-card');
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // 2. SEPETİ TEMİZLEME
+
     if (silButonu) {
         silButonu.addEventListener('click', function() {
             if (sepet.length > 0) {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // 3. ALIŞVERİŞİ BİTİRME (KART BİLGİSİ PANELİ)
+    
     if (bitirButonu) {
         bitirButonu.addEventListener('click', function() {
             if (sepet.length > 0) {
@@ -64,10 +64,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 `;
 
-                // Formu sayfaya ekle
+                
                 document.body.insertAdjacentHTML('beforeend', odemeFormu);
 
-                // Form butonlarını çalıştır
+            
                 document.getElementById('odeme-iptal').addEventListener('click', () => {
                     document.getElementById('odeme-overlay').remove();
                 });
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // 4. ARAYÜZÜ GÜNCELLEME
+    
     function guncelleSepetUI() {
         sepetListesi.innerHTML = "";
         let toplam = 0;
@@ -110,11 +110,9 @@ document.addEventListener('DOMContentLoaded', function() {
         toplamFiyatGosterge.innerText = toplam.toLocaleString('tr-TR');
     }
 });
-// ==========================================================================
-// 2. DÜNYA SAVAŞI TARİH BİLGİSİ TESTİ (QUIZ) UYGULAMASI
-// ==========================================================================
 
-// 1. Soruların Tanımlanması (Dizi ve Nesne Yapısı)
+
+
 const quizQuestions = [
     {
         question: "İkinci Dünya Savaşı hangi yıl resmi olarak başlamıştır?",
@@ -241,21 +239,21 @@ document.addEventListener("DOMContentLoaded", () => {
         restartButton.addEventListener("click", startQuiz);
     }
 });
-// İletişim sayfasındaki butonu yakalıyoruz
+
 const gmailButonu = document.getElementById('gmailButonu');
 
 if (gmailButonu) {
     gmailButonu.addEventListener('click', function(e) {
-        e.preventDefault(); // Sayfanın yukarı kaymasını engeller
+        e.preventDefault(); 
         
-        // Kullanıcının mobil mi yoksa bilgisayar mı olduğunu kontrol eden test
+      
         const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         
         if (isMobile) {
-            // Mobildeyse: Doğrudan cihazın kendi e-posta/Gmail uygulamasını tetikler (Hata vermez)
+           
             window.location.href = "mailto:huzeyfegedik76@gmail.com?subject=Iletisim%20Formu";
         } else {
-            // Bilgisayardaysa: Windows uyarısını geçip direkt tarayıcıda Gmail web compose açar
+          
             window.open("https://mail.google.com/mail/?view=cm&fs=1&to=huzeyfegedik76@gmail.com", "_blank");
         }
     });
